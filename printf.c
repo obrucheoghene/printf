@@ -39,7 +39,7 @@ int _printf(const char *format, ...)
 		format++;
 	}
 
-	putchar('\n');
+	va_end(list);
 	return (len);
 
 }
