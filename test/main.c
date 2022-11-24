@@ -10,6 +10,9 @@ int main(void)
 	int len = 0;
 	char *s = "-596943495";
 
-	len = _printf("My name is %s, I am %d years old ", "Wilfred ", 8);
+	len = _printf("%c%cth %s%s a%cg%s: Y%sou %s no%ching%s Snow.%c", 'W', 'i', "some ", "more", 'r', "s", "", "know", 't', ", Jon", '\n');
+
+
+_printf("%s%c%c%c%s%%%s%c", "Loading ", '.', '.', '.', " 99", " Please wait", '\n');
 	return (len);
 }

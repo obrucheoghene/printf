@@ -8,7 +8,7 @@
 #include <stdlib.h>
 
 /**
- * struct print_fun
+ * struct print_fun - struct print function
  * @fs: format specifier
  * @pfun: print function ponter
  */
@@ -16,12 +16,12 @@ typedef struct print_fun
 {
 	char fs;
 	int (*pfun)(va_list);
-} print_fun
+} print_fun;
 
-int _printf(const char *format, ...);
-int _putchar(char c);
+int _printf(const char*, ...);
+int _putchar(char);
 
-int (*get_fun(char c))(va_list);
+int (*get_fun(const char))(va_list);
 int _print_cha(va_list);
 int _print_str(va_list);
 int _print_pct(va_list);
@@ -30,6 +30,6 @@ int _print_int(va_list);
 
 /* print recursively */
 int _rec_print_num(int);
-int _rec_print_str(char*);
+int _rec_print_str(char *);
 
 #endif
