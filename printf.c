@@ -11,7 +11,6 @@
 
 int _printf(const char *format, ...)
 {
-	int i = 0;
 	int len = 0;
 	va_list list;
 
