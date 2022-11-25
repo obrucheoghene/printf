@@ -64,6 +64,8 @@ int (*get_fun(const char c))(va_list)
 	print_fun printfun[] = {
 		{'c', _print_cha},
 		{'s', _print_str},
+		{'d', _print_dec},
+		{'i', _print_dec},
 		{'\0', NULL}
 	};
 	int i = 0;

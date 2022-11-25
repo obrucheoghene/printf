@@ -2,28 +2,6 @@
 
 
 /**
- * _print_num - print numbers
- *
- * @n: print numbers
- *
- * Return: return total printed numbers
- */
-int _print_num(int n)
-{
-	int len;
-
-	if (n / 10 < 1)
-	{
-		putchar(n + '0');
-		return (1);
-	}
-	len = _print_num(n / 10);
-	putchar((n % 10) + '0');
-	return (1 + len);
-}
-
-
-/**
  * _print_dec - print decimal integer
  *
  * @list: variadic list
