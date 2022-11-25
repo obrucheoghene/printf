@@ -22,6 +22,9 @@ int _printf(const char *format, ...)
 		if (*format == '%')
 		{
 			format++;
+			/* return -1 if immediately after % is null character - \0 */
+			if (*format == '\0')
+				return (-1);
 			/* check if function pointer returns null */
 			if (get_fun(*format) != NULL)
 			{

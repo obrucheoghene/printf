@@ -24,6 +24,8 @@ int _print_cha(va_list list)
 {
 	char val = va_arg(list, int);
 
+	if (val == '\0')
+		return (write(1, &val, 0));
 	return (_putchar(val));
 }
 
@@ -40,7 +42,7 @@ int _print_str(va_list list)
 {
 	char *val = va_arg(list, char*);
 
-	if(val == NULL)
+	if (val == NULL)
 		val = "(null)";
 	return (_rec_print_str(val));
 }
@@ -62,4 +64,3 @@ int _rec_print_str(char *val)
 	val++;
 	return (1 + _rec_print_str(val));
 }
-
