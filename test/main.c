@@ -8,8 +8,7 @@
 int main(void)
 {
 	int len = 0;
-
-	len += _printf("%Kf\n");;
+	len += _printf("%d\n", -i);
 
 	_printf("[%d]", len);
 

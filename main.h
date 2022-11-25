@@ -28,9 +28,12 @@ int _print_str(va_list);
 int _print_pct(va_list);
 int _print_dec(va_list);
 int _print_int(va_list);
+int _print_bin(va_list);
+
 
 /* print recursively */
-int _rec_print_num(int);
+int _rec_print_num(long int); 
 int _rec_print_str(char *);
+int _rec_print_bin(unsigned int);
 
 #endif
