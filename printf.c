@@ -14,6 +14,10 @@ int _printf(const char *format, ...)
 	int len = 0;
 	va_list list;
 
+	/* return -1 if format is NULL */
+	if (format == NULL)
+		return (-1);
+
 	va_start(list, format);
 
 

@@ -9,7 +9,7 @@ int main(void)
 {
 	int len = 0;
 
-	len += printf("%");;
+	len += _printf(NULL);;
 	printf("[%d]", len);
 
 	return (len);
