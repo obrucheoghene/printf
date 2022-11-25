@@ -15,7 +15,7 @@ int _print_dec(va_list list)
 	/* if n is a negative number */
 	if (n < 0)
 	{
-		putchar('-');
+		_putchar('-');
 		len++;
 		n *= -1;
 	}
@@ -38,11 +38,11 @@ int _rec_print_num(int n)
 
 	if (n / 10 < 1)
 	{
-		putchar(n + '0');
+		_putchar(n + '0');
 		return (1);
 	}
 	len = _rec_print_num(n / 10);
-	putchar((n % 10) + '0');
+	_putchar((n % 10) + '0');
 	return (1 + len);
 }
 

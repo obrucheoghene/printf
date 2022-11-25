@@ -9,7 +9,7 @@ int main(void)
 {
 	int len = 0;
 
-	len += _printf("%d", INT_MAX);
+	len += _printf("iddi%diddiiddi\n", 1024);
 
 	_printf("[%d]", len);
 
