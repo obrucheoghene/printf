@@ -9,7 +9,9 @@ int main(void)
 {
 	int len = 0;
 
-	len += _printf("Let's print a simple sentence.\n");
+	len += _printf("%%");
+
+	printf("[%d]", len);
 
 	return (len);
 }
