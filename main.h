@@ -6,6 +6,7 @@
 #include <stdarg.h>
 #include <unistd.h>
 #include <stdlib.h>
+#include <limits.h>
 
 /**
  * struct print_fun - struct print function

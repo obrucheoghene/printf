@@ -9,8 +9,9 @@ int main(void)
 {
 	int len = 0;
 
-	len += printf("%c", '\0');
-	printf("[%d]", len);
+	len += _printf("%d", INT_MAX);
+
+	_printf("[%d]", len);
 
 	return (len);
 }
