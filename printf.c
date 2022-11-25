@@ -34,9 +34,12 @@ int _printf(const char *format, ...)
 			{
 				len += (get_fun(*format))(list);
 			}
+			else if (*format == '%')
+				len += _putchar('%');
 			else
 			{
-				 len += _putchar(*format);
+				len += _putchar(*(--format)); 
+				len += _putchar(*(++format));
 			}
 		}
 		else

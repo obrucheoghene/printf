@@ -9,7 +9,7 @@ int main(void)
 {
 	int len = 0;
 
-	len += _printf("iddi%diddiiddi\n", 1024);
+	len += _printf("%Kf\n");;
 
 	_printf("[%d]", len);
 
