@@ -19,8 +19,6 @@ int _printf(const char *format, ...)
 		return (-1);
 
 	va_start(list, format);
-
-
 	while (*format != '\0')
 	{
 		if (*format == '%')
@@ -31,14 +29,12 @@ int _printf(const char *format, ...)
 				return (-1);
 			/* check if function pointer returns null */
 			if (get_fun(*format) != NULL)
-			{
 				len += (get_fun(*format))(list);
-			}
 			else if (*format == '%')
 				len += _putchar('%');
 			else
 			{
-				len += _putchar(*(--format)); 
+				len += _putchar(*(--format));
 				len += _putchar(*(++format));
 			}
 		}
