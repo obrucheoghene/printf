@@ -24,8 +24,6 @@ int _print_cha(va_list list)
 {
 	char val = va_arg(list, int);
 
-	if (val == '\0')
-		return (write(1, &val, 0));
 	return (_putchar(val));
 }
 
