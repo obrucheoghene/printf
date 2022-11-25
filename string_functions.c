@@ -40,6 +40,8 @@ int _print_str(va_list list)
 {
 	char *val = va_arg(list, char*);
 
+	if(val == NULL)
+		val = "(null)";
 	return (_rec_print_str(val));
 }
 

@@ -9,7 +9,7 @@ int main(void)
 {
 	int len = 0;
 
-	len += _printf("%%");
+	len += printf("Complete the sentence: You %s nothing, Jon Snow.\n", (char *)0);
 
 	printf("[%d]", len);
 
