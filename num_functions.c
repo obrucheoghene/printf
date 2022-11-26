@@ -27,27 +27,6 @@ int _print_dec(va_list list)
 
 
 
-/**
- * _print_bin - print binary
- *
- * @list: variadic list
- *
- * Return: lenght of bin printed
- */
-int _print_bin(va_list list)
-{
-	int n = va_arg(list, int);
-	unsigned int nb;
-	int len = 0;
-
-	/* if n is a negative number */
-	if (n < 0)
-		nb = n * -1;
-
-	return (len + _rec_print_bin(nb));
-}
-
-
 
 
 /**
