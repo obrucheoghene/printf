@@ -10,7 +10,7 @@
  */
 int _print_dec(va_list list)
 {
-	int n = va_arg(list, int);
+	long int n = va_arg(list, long int);
 	int len = 0;
 
 
@@ -57,7 +57,7 @@ int _print_bin(va_list list)
  *
  * Return: return total printed numbers
  */
-int _rec_print_num(long int n)
+int _rec_print_num(int n)
 {
 	int len;
 
