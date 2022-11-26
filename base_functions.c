@@ -10,7 +10,7 @@
 int _print_bin(va_list list)
 {
 	int n = va_arg(list, int);
-	int a[10];
+	int a[64];
 	int i;
 	int len = 0;
 
