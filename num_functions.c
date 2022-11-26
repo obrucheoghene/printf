@@ -10,7 +10,7 @@
  */
 int _print_dec(va_list list)
 {
-	long int n = va_arg(list, long int);
+	int n = va_arg(list, int);
 	int len = 0;
 
 
